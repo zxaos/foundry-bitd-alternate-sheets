@@ -804,6 +804,16 @@
               background: $lightgray;
               font-size: 1.2em;
 
+              .experience {
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 0.5rem;
+
+                .flex-vertical:first-child {
+                  margin-right: 6px;
+                }
+              }
+
               p {
                 line-height: 1em;
               }

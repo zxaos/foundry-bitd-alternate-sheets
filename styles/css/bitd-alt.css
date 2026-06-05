@@ -4006,6 +4006,14 @@
   background: #bbb;
   font-size: 1.2em;
 }
+.blades-alt.actor.sheet.pc .sheet-wrapper .tab-space .tab-content .tab .playbook .xp-notes .experience {
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.blades-alt.actor.sheet.pc .sheet-wrapper .tab-space .tab-content .tab .playbook .xp-notes .experience .flex-vertical:first-child {
+  margin-right: 6px;
+}
 .blades-alt.actor.sheet.pc .sheet-wrapper .tab-space .tab-content .tab .playbook .xp-notes p {
   line-height: 1em;
 }
