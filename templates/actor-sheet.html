@@ -66,6 +66,18 @@
             </div>
           </div>
         </div>
+        {{#if (getSetting 'Edge')}}
+        <div class="edge-action">
+          {{#multiboxes system.edge.value}}
+          <input type="radio" id="edge-{{../actor._id}}-0" name="system.edge.value" value="0" class="zero"/>
+          {{#times_from_1 system.edge.max}}
+          <input type="radio" id="edge-{{../actor._id}}-{{this}}" name="system.edge.value" value="{{this}}" class="radio-toggle"/>
+          <label for="edge-{{../actor._id}}-{{this}}" class="radio-toggle {{#if (gte ../system.edge.value @this)}}on{{/if}}"></label>
+          {{/times_from_1}}
+          {{/multiboxes}}
+          <div class="attribute-skill-label">{{localize "BITD.Edge"}}</div>
+        </div>
+        {{/if}}
       </section>
       <section class="character-info col">
 

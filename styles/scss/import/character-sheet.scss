@@ -595,6 +595,28 @@
             }
           }
         }
+
+        /* Mostly the same as attributes.scss here */
+        .edge-action {
+          @include custom_radio(1em, 1em);
+          position: relative;
+          bottom: 44px;
+          padding: 0 5px;
+          justify-content: center;
+          align-items: center;
+
+          .attribute-skill-label {
+            font-weight: bold;
+            font-variant: small-caps;
+            padding: 3px 0;
+            margin-left: 0.4em;
+            line-height: 0.8em;
+          }
+
+          label {
+            border: 1px solid #666666;
+          }
+        }
       }
 
       .character-info {
